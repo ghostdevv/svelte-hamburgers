@@ -1,1 +1,7 @@
+.github
+.vscode
 node_modules
+src
+.prettierrc
+rollup.config.js
+tsconfig.json
