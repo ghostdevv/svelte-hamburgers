@@ -1,0 +1,29 @@
+{
+  "name": "svelte-hamburgers",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "svelte": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "hamburgers": "^1.1.3"
+  },
+  "devDependencies": {
+    "rollup": "^2.47.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^7.1.0",
+    "sass": "^1.32.12",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.3"
+  }
+}
