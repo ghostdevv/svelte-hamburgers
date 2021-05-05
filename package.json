@@ -9,6 +9,11 @@
     "build": "rollup -c",
     "dev": "rollup -c -w"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {
     "common-tags": "^1.8.0",
     "hamburgers": "^1.1.3"
