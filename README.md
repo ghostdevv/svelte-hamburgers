@@ -12,7 +12,7 @@ In your Svelte files:
     let open;
 </script>
 
-<Hamburger bind:open>
+<Hamburger bind:open />
 ```
 
 # Properties
