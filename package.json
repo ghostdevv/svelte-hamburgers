@@ -25,5 +25,27 @@
     "sass": "^1.32.12",
     "svelte": "^3.38.2",
     "svelte-preprocess": "^4.7.3"
-  }
+  },
+  "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
+  "author": "GHOST",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostdevv/svelte-hamburgers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghostdevv/svelte-hamburgers/issues"
+  },
+  "keywords": [
+    "svelte",
+    "svelte hamburger",
+    "svelte hamburgers",
+    "svelte burger",
+    "svelte burgers",
+    "hamburger",
+    "hamburgers",
+    "component",
+    "hamburger component",
+    "svelte hamburger component",
+    "svelte burger component"
+  ]
 }
