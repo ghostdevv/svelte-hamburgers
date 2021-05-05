@@ -2,32 +2,63 @@
     A Svelte component implementation of hamburgers.css by Jonathan Suh
     https://jonsuh.com/hamburgers
 -->
-<script>
+<script lang="ts">
     import { oneLine } from 'common-tags';
 
     // Required open boolean
-    export let open;
+    export let open: boolean;
 
     // Type
-    export let type = 'spin';
+    export let type:
+        | '3dx'
+        | '3dx-r'
+        | '3dy'
+        | '3dy-r'
+        | '3dxy'
+        | '3dxy-r'
+        | 'arrow'
+        | 'arrow-r'
+        | 'arrowalt'
+        | 'arrowalt-r'
+        | 'arrowturn'
+        | 'arrowturn-r'
+        | 'boring'
+        | 'collapse'
+        | 'collapse-r'
+        | 'elastic'
+        | 'elastic-r'
+        | 'emphatic'
+        | 'emphatic-r'
+        | 'minus'
+        | 'slider'
+        | 'slider-r'
+        | 'spin'
+        | 'spin-r'
+        | 'spring'
+        | 'spring-r'
+        | 'stand'
+        | 'stand-r'
+        | 'squeeze'
+        | 'vortex'
+        | 'vortex-r' = 'spin';
 
     // Color settings (We use the American spelling of "color" for simplicity as css uses that)
-    export let color = 'white';
-    export let activeColor = 'white';
+    export let color: string = 'white';
+    export let activeColor: string = 'white';
 
     // Padding
-    export let paddingX = '15px';
-    export let paddingY = '15px';
+    export let paddingX: string = '15px';
+    export let paddingY: string = '15px';
 
     // Layer settings
-    export let layerWidth = '40px';
-    export let layerHeight = '4px';
-    export let layerSpacing = '6px';
-    export let borderRadius = '4px';
+    export let layerWidth: string = '40px';
+    export let layerHeight: string = '4px';
+    export let layerSpacing: string = '6px';
+    export let borderRadius: string = '4px';
 
     // Hover filtering
-    export let hoverOpacity = 0.7;
-    export let activeHoverOpacity = 0.7;
+    export let hoverOpacity: number = 0.7;
+    export let activeHoverOpacity: number = 0.7;
 
     // Map inputs to css variables
     $: style = oneLine`
