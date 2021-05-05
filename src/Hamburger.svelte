@@ -44,8 +44,6 @@
 
         --opacity: ${hoverOpacity};
         --opacity-active: ${activeHoverOpacity};
-
-        background-color: red;
     `;
 </script>
 
