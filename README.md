@@ -17,7 +17,7 @@ In your Svelte files:
 
 # Properties
 
-You can use these to customise the hamburger, just provide them as props to the burger component
+You can use these to customise the hamburger, just provide them as props to the burger component.
 
 | Property           | Type   | Default | Description                                                                                                        |
 | ------------------ | ------ | ------- | ------------------------------------------------------------------------------------------------------------------ |
