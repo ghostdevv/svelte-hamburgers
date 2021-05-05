@@ -43,8 +43,8 @@
         | 'vortex-r' = 'spin';
 
     // Color settings (We use the American spelling of "color" for simplicity as css uses that)
-    export let color: string = 'white';
-    export let activeColor: string = 'white';
+    export let color: string = 'black';
+    export let activeColor: string = 'black';
 
     // Padding
     export let paddingX: string = '15px';
