@@ -21,7 +21,7 @@
 
     // Layer settings
     export let layerWidth = '30px';
-    export let layerHeight = '2px';
+    export let layerHeight = '4px';
     export let layerSpacing = '6px';
     export let borderRadius = '4px';
 
