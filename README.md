@@ -2,6 +2,8 @@
 
 Animated (or not) hamburgers for Svelte based on the popular [hamburgers.css](https://jonsuh.com/hamburgers/).
 
+You can view an example [here](https://svelte.dev/repl/86b10871cc7f42b39e74d71bdb4d643e?version=3.38.2)
+
 # How to use?
 
 In your Svelte files:
