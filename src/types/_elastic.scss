@@ -20,9 +20,9 @@
 
     &.is-active {
         .hamburger-inner {
-            $y-offset: calc(var(--layer-spacing) + var(--layer-height));
+            --y-offset: calc(var(--layer-spacing) + var(--layer-height));
 
-            transform: translate3d(0, $y-offset, 0) rotate(135deg);
+            transform: translate3d(0, var(--y-offset), 0) rotate(135deg);
             transition-delay: 0.075s;
 
             &::before {
@@ -31,7 +31,8 @@
             }
 
             &::after {
-                transform: translate3d(0, $y-offset * -2, 0) rotate(-270deg);
+                transform: translate3d(0, calc(var(--y-offset) * -2), 0)
+                    rotate(-270deg);
                 transition-delay: 0.075s;
             }
         }

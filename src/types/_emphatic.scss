@@ -28,8 +28,8 @@
             background-color: transparent !important;
 
             &::before {
-                left: var(--layer-width) * -2;
-                top: var(--layer-width) * -2;
+                left: calc(var(--layer-width) * -2);
+                top: calc(var(--layer-width) * -2);
                 transform: translate3d(
                         calc(var(--layer-width) * 2),
                         calc(var(--layer-width) * 2),
@@ -41,10 +41,10 @@
             }
 
             &::after {
-                right: var(--layer-width) * -2;
-                top: var(--layer-width) * -2;
+                right: calc(var(--layer-width) * -2);
+                top: calc(var(--layer-width) * -2);
                 transform: translate3d(
-                        var(--layer-width) * -2,
+                        calc(var(--layer-width) * -2),
                         calc(var(--layer-width) * 2),
                         0
                     )
