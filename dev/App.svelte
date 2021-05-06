@@ -2,4 +2,4 @@
     import Hamburger from '../';
 </script>
 
-<Hamburger />
+<Hamburger layerWidth="30px" layerHeight="2px" type="collapse" />
