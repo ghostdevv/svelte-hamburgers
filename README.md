@@ -1,14 +1,19 @@
-# Svelte Hamburgers
+# 🍔 Svelte Hamburgers
 
-Animated (or not) hamburgers for Svelte based on the popular [hamburgers.css](https://jonsuh.com/hamburgers/).
+The ease to use Hamburger menu component for Svelte! Fully customisable with an extensive set of options, powered by a modified version of [hamburgers.css](https://github.com/jonsuh/hamburgers).
 
+Example of how to use svelte-hamburgers, [view the repl here](https://svelte.dev/repl/86b10871cc7f42b39e74d71bdb4d643e?version=3.38.2)
 [![](https://i.imgur.com/cjLWZQk.gif)](https://svelte.dev/repl/86b10871cc7f42b39e74d71bdb4d643e?version=3.38.2)
 
-Checkout the example [here](https://svelte.dev/repl/86b10871cc7f42b39e74d71bdb4d643e?version=3.38.2) (as seen in the above gif)
+# Install
+
+We will save it as a dev dependancy with `-D`
+
+```bash
+npm i svelte-hamburgers -D
+```
 
 # How to use?
-
-In your Svelte files:
 
 ```svelte
 <script>
@@ -19,20 +24,34 @@ In your Svelte files:
 <Hamburger bind:open />
 ```
 
+The `open` variable can be then used to handle your menu, for example:
+
+```svelte
+{#if open}
+    <!-- show menu -->
+{/if}
+```
+
 # Properties
 
-You can use these to customise the hamburger, just provide them as props to the burger component.
+You can use these to customise the hamburger, just provide them as props to the burger component, for example `<Hamburger color="white" />`
 
-| Property           | Type   | Default | Description                                                                                                        |
-| ------------------ | ------ | ------- | ------------------------------------------------------------------------------------------------------------------ |
-| type               | string | spin    | The type of burger you want, you can see the types [here](https://jonsuh.com/hamburgers/), it should be lowercase. |
-| color              | string | black   | The color of the burger.                                                                                           |
-| activeColor        | string | black   | The color of the burger when active.                                                                               |
-| paddingX           | string | 15px    | The padding on the X axis.                                                                                         |
-| paddingY           | string | 15px    | The padding on the Y axis.                                                                                         |
-| layerWidth         | string | 40px    | The width of the burger.                                                                                           |
-| layerHeight        | string | 4px     | The height of the burger.                                                                                          |
-| layerSpacing       | string | 6px     | The spacing between layers of the burger.                                                                          |
-| borderRadius       | string | 4px     | The border radius of each burger part.                                                                             |
-| hoverOpacity       | number | 0.7     | The opacity amount on hover.                                                                                       |
-| activeHoverOpacity | number | 0.7     | The opacity amount of hover when active.                                                                           |
+| Property           | Type   | Default               | Description                                                                                                                                            |
+| ------------------ | ------ | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| type               | string | spin                  | The type of burger you want, you can see the types [here](https://github.com/ghostdevv/svelte-hamburgers/blob/main/README.md), it should be lowercase. |
+| color              | string | black                 | The color of the burger.                                                                                                                               |
+| activeColor        | string | value of color        | The color of the burger when active.                                                                                                                   |
+| paddingX           | string | 15px                  | The padding on the X axis.                                                                                                                             |
+| paddingY           | string | 15px                  | The padding on the Y axis.                                                                                                                             |
+| layerWidth         | string | 30px                  | The width of the burger.                                                                                                                               |
+| layerHeight        | string | 2px                   | The height of the burger.                                                                                                                              |
+| layerSpacing       | string | 6px                   | The spacing between layers of the burger.                                                                                                              |
+| borderRadius       | string | 4px                   | The border radius of each burger part.                                                                                                                 |
+| hoverOpacity       | number | 0.7                   | The opacity amount on hover.                                                                                                                           |
+| activeHoverOpacity | number | value of hoverOpacity | The opacity amount of hover when active.                                                                                                               |
+
+# Support
+
+-   Message me on discord: `GHOST#7524`<br>
+-   Join the [discord](https://discord.gg/2Vd4wAjJnm)<br>
+-   Create a issue on the [github](https://github.com/ghostdevv/svelte-hamburgers)
