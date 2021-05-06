@@ -16,8 +16,8 @@
     export let activeColor = color;
 
     // Padding
-    export let paddingX = '15px';
-    export let paddingY = '15px';
+    export let paddingX = '12px';
+    export let paddingY = '12px';
 
     // Layer settings
     export let layerWidth = '30px';
