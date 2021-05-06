@@ -44,8 +44,6 @@
 
         --opacity: ${hoverOpacity};
         --opacity-active: ${activeHoverOpacity};
-
-        background-color: a;
     `;
 </script>
 
@@ -53,60 +51,45 @@
     class="hamburger hamburger--{type} {open && 'is-active'}"
     {style}
     on:click={() => (open = !open)}>
-    <span class="hamburger-box" style="background-color: a;">
-        <span class="hamburger-inner" style="background-color:a " />
+    <span class="hamburger-box">
+        <span class="hamburger-inner" />
     </span>
 </button>
 
 <style lang="scss">
-    @use 'hamburgers/_sass/hamburgers/hamburgers' as *;
+    // Import the base scss
+    @import 'base';
 
-    .hamburger {
-        padding: var(--paddingY) var(--paddingX);
-
-        .hamburger-box {
-            width: var(--layer-width);
-            height: calc(var(--layer-height) * 3 + var(--layer-spacing) * 2);
-        }
-
-        .hamburger-inner {
-            margin-top: calc(var(--layer-height) / -2);
-
-            &,
-            &::before,
-            &::after {
-                width: var(--layer-width);
-                height: var(--layer-height);
-
-                background-color: var(--color);
-                border-radius: var(--border-radius);
-            }
-
-            &::before {
-                top: calc((var(--layer-spacing) + var(--layer-height)) * -1);
-            }
-
-            &::after {
-                bottom: calc((var(--layer-spacing) + var(--layer-height)) * -1);
-            }
-        }
-
-        &:hover {
-            opacity: var(--opacity);
-        }
-
-        &.is-active {
-            &:hover {
-                opacity: var(--opacity-active);
-            }
-
-            .hamburger-inner {
-                &,
-                &::before,
-                &::after {
-                    background-color: var(--color-active);
-                }
-            }
-        }
-    }
+    // Import the types
+    @import 'types/3dx';
+    @import 'types/3dx-r';
+    @import 'types/3dy';
+    @import 'types/3dy-r';
+    @import 'types/3dxy';
+    @import 'types/3dxy-r';
+    @import 'types/arrow';
+    @import 'types/arrow-r';
+    @import 'types/arrowalt';
+    @import 'types/arrowalt-r';
+    @import 'types/arrowturn';
+    @import 'types/arrowturn-r';
+    @import 'types/boring';
+    @import 'types/collapse';
+    @import 'types/collapse-r';
+    @import 'types/elastic';
+    @import 'types/elastic-r';
+    @import 'types/emphatic';
+    @import 'types/emphatic-r';
+    @import 'types/minus';
+    @import 'types/slider';
+    @import 'types/slider-r';
+    @import 'types/spin';
+    @import 'types/spin-r';
+    @import 'types/spring';
+    @import 'types/spring-r';
+    @import 'types/stand';
+    @import 'types/stand-r';
+    @import 'types/squeeze';
+    @import 'types/vortex';
+    @import 'types/vortex-r';
 </style>
