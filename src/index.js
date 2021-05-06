@@ -1,2 +1,1 @@
-import Hamburger from './Hamburger.svelte';
-export default Hamburger;
+export { default as default } from './Hamburger.svelte';
