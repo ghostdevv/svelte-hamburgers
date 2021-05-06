@@ -13,21 +13,21 @@
 
     // Color settings (We use the American spelling of "color" for simplicity as css uses that)
     export let color = 'black';
-    export let activeColor = 'black';
+    export let activeColor = color;
 
     // Padding
     export let paddingX = '15px';
     export let paddingY = '15px';
 
     // Layer settings
-    export let layerWidth = '40px';
-    export let layerHeight = '4px';
+    export let layerWidth = '30px';
+    export let layerHeight = '2px';
     export let layerSpacing = '6px';
     export let borderRadius = '4px';
 
     // Hover filtering
     export let hoverOpacity = 0.7;
-    export let activeHoverOpacity = 0.7;
+    export let activeHoverOpacity = hoverOpacity;
 
     // Map inputs to css variables
     $: style = oneLine`
