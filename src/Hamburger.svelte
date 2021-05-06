@@ -44,6 +44,8 @@
 
         --opacity: ${hoverOpacity};
         --opacity-active: ${activeHoverOpacity};
+
+        background-color: a;
     `;
 </script>
 
@@ -51,8 +53,8 @@
     class="hamburger hamburger--{type} {open && 'is-active'}"
     {style}
     on:click={() => (open = !open)}>
-    <span class="hamburger-box">
-        <span class="hamburger-inner" />
+    <span class="hamburger-box" style="background-color: a;">
+        <span class="hamburger-inner" style="background-color:a " />
     </span>
 </button>
 
@@ -81,15 +83,11 @@
             }
 
             &::before {
-                top: calc(
-                    calc(var(--layer-spacing) + var(--layer-height)) * -1
-                );
+                top: calc((var(--layer-spacing) + var(--layer-height)) * -1);
             }
 
             &::after {
-                bottom: calc(
-                    calc(var(--layer-spacing) + var(--layer-height)) * -1
-                );
+                bottom: calc((var(--layer-spacing) + var(--layer-height)) * -1);
             }
         }
 
