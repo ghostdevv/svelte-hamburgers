@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "svelte": "dist/index.js",
+  "svelte": "dist/index.mjs",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
