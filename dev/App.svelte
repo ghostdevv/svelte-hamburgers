@@ -40,7 +40,7 @@
     {#each types as ty}
         <card>
             <span>{ty}</span>
-            <Hamburger layerWidth="30px" layerHeight="2px" type={ty} />
+            <Hamburger type={ty} />
         </card>
     {/each}
 </cards>
