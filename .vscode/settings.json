@@ -7,4 +7,7 @@
         "editor.defaultFormatter": "svelte.svelte-vscode",
         "editor.formatOnSave": true
     },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
 }

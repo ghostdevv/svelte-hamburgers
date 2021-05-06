@@ -1,7 +1,8 @@
 .github
 .vscode
+dev
 node_modules
 src
 .prettierrc
 rollup.config.js
-tsconfig.json
+types.md
