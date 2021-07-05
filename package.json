@@ -23,7 +23,7 @@
     "rollup-plugin-svelte": "^7.1.0",
     "sass": "^1.32.12",
     "sirv-cli": "^1.0.11",
-    "svelte": "3.38.2",
+    "svelte": "^3.38.2",
     "svelte-preprocess": "^4.7.3"
   },
   "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
