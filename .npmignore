@@ -2,7 +2,6 @@
 .vscode
 dev
 node_modules
-src
 .prettierrc
 rollup.config.js
 types.md
