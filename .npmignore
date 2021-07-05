@@ -1,7 +1,0 @@
-.github
-.vscode
-dev
-node_modules
-.prettierrc
-rollup.config.js
-types.md
