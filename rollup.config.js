@@ -1,4 +1,4 @@
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import preprocess from 'svelte-preprocess';
 import svelte from 'rollup-plugin-svelte';
 import pkg from './package.json';
