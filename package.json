@@ -3,7 +3,7 @@
   "version": "2.0.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "svelte": "dist/index.js",
+  "svelte": "src/index.js",
   "license": "MIT",
   "scripts": {
     "build": "rollup -c",
@@ -12,6 +12,12 @@
     "dev:browser": "cd dev && rollup -c -w",
     "dev:browser-serv": "sirv dev --dev --no-clear"
   },
+  "files":[
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.0.0",
     "common-tags": "^1.8.0",
