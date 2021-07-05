@@ -47,5 +47,8 @@
     "hamburger component",
     "svelte hamburger component",
     "svelte burger component"
-  ]
+  ],
+  "dependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0"
+  }
 }
