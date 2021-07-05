@@ -3,8 +3,6 @@
     https://jonsuh.com/hamburgers
 -->
 <script>
-    import { oneLine } from 'common-tags';
-
     // Required open boolean
     export let open;
 
@@ -30,7 +28,7 @@
     export let activeHoverOpacity = hoverOpacity;
 
     // Map inputs to css variables
-    $: style = oneLine`
+    $: style = `
         --color: ${color};
         --color-active: ${activeColor};
         
