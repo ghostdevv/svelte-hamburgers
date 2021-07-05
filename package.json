@@ -18,6 +18,7 @@
     "README.md"
   ],
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.47.0",
     "rollup-plugin-svelte": "^7.1.0",
@@ -47,8 +48,5 @@
     "hamburger component",
     "svelte hamburger component",
     "svelte burger component"
-  ],
-  "dependencies": {
-    "@rollup/plugin-node-resolve": "^13.0.0"
-  }
+  ]
 }
