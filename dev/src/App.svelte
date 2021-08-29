@@ -1,5 +1,5 @@
 <script>
-    import Hamburger from '../';
+    import Hamburger from 'svelte-hamburgers';
 
     const types = [
         '3dx',

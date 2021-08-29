@@ -10,8 +10,7 @@
     "build": "rollup -c",
     "dev": "run-p dev:*",
     "dev:lib": "rollup -c -w",
-    "dev:browser": "cd dev && rollup -c -w",
-    "dev:browser-serv": "sirv dev --dev --no-clear"
+    "dev:dev": "cd dev && npm run dev"
   },
   "files": [
     "dist",
