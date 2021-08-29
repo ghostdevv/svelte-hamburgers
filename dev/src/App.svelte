@@ -46,6 +46,9 @@
 </cards>
 
 <style lang="scss" global>
+    @import 'svelte-hamburgers/scss/types/_all.scss';
+    @import 'svelte-hamburgers/scss/base.scss';
+
     *,
     *::before,
     *::after {
