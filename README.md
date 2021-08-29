@@ -52,6 +52,5 @@ You can use these to customise the hamburger, just provide them as props to the 
 
 # Support
 
--   Message me on discord: `GHOST#7524`<br>
 -   Join the [discord](https://discord.gg/2Vd4wAjJnm)<br>
 -   Create a issue on the [github](https://github.com/ghostdevv/svelte-hamburgers)
