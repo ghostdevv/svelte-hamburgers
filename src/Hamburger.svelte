@@ -92,38 +92,38 @@
 
 <style lang="scss">
     // Import the base scss
-    @import 'base';
+    @import 'scss/base';
 
     // Import the types
-    @import 'types/3dx';
-    @import 'types/3dx-r';
-    @import 'types/3dy';
-    @import 'types/3dy-r';
-    @import 'types/3dxy';
-    @import 'types/3dxy-r';
-    @import 'types/arrow';
-    @import 'types/arrow-r';
-    @import 'types/arrowalt';
-    @import 'types/arrowalt-r';
-    @import 'types/arrowturn';
-    @import 'types/arrowturn-r';
-    @import 'types/boring';
-    @import 'types/collapse';
-    @import 'types/collapse-r';
-    @import 'types/elastic';
-    @import 'types/elastic-r';
-    @import 'types/emphatic';
-    @import 'types/emphatic-r';
-    @import 'types/minus';
-    @import 'types/slider';
-    @import 'types/slider-r';
-    @import 'types/spin';
-    @import 'types/spin-r';
-    @import 'types/spring';
-    @import 'types/spring-r';
-    @import 'types/stand';
-    @import 'types/stand-r';
-    @import 'types/squeeze';
-    @import 'types/vortex';
-    @import 'types/vortex-r';
+    @import 'scss/types/3dx';
+    @import 'scss/types/3dx-r';
+    @import 'scss/types/3dy';
+    @import 'scss/types/3dy-r';
+    @import 'scss/types/3dxy';
+    @import 'scss/types/3dxy-r';
+    @import 'scss/types/arrow';
+    @import 'scss/types/arrow-r';
+    @import 'scss/types/arrowalt';
+    @import 'scss/types/arrowalt-r';
+    @import 'scss/types/arrowturn';
+    @import 'scss/types/arrowturn-r';
+    @import 'scss/types/boring';
+    @import 'scss/types/collapse';
+    @import 'scss/types/collapse-r';
+    @import 'scss/types/elastic';
+    @import 'scss/types/elastic-r';
+    @import 'scss/types/emphatic';
+    @import 'scss/types/emphatic-r';
+    @import 'scss/types/minus';
+    @import 'scss/types/slider';
+    @import 'scss/types/slider-r';
+    @import 'scss/types/spin';
+    @import 'scss/types/spin-r';
+    @import 'scss/types/spring';
+    @import 'scss/types/spring-r';
+    @import 'scss/types/stand';
+    @import 'scss/types/stand-r';
+    @import 'scss/types/squeeze';
+    @import 'scss/types/vortex';
+    @import 'scss/types/vortex-r';
 </style>
