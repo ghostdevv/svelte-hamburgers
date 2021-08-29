@@ -7,7 +7,7 @@ export default {
     input: 'src/index.js',
     output: [
         { file: pkg.module, format: 'es' },
-        { file: pkg.main, format: 'umd', name: 'Hamburgers' },
+        { file: pkg.main, format: 'umd', name: 'svelte-hamburgers' },
     ],
     plugins: [
         svelte({ preprocess: [preprocess()], emitCss: false }),
