@@ -1,5 +1,7 @@
 # Types
 
+[View them here](https://jonsuh.com/hamburgers/)
+
 -   3dx
 -   3dx-r
 -   3dy
