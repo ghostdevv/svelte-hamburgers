@@ -3,8 +3,6 @@
     https://jonsuh.com/hamburgers
 -->
 <script>
-    import { createEventDispatcher } from 'svelte';
-
     /**
      * Open boolean
      * @type {boolean}
