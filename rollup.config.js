@@ -3,6 +3,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import preprocess from 'svelte-preprocess';
 import svelte from 'rollup-plugin-svelte';
 import pkg from './package.json';
+import sveld from 'sveld';
 
 export default {
     input: 'src/index.js',
@@ -14,5 +15,10 @@ export default {
         svelte({ preprocess: [preprocess()], emitCss: false }),
         resolve(),
         commonjs(),
+        sveld({
+            typesOptions: {
+                outDir: 'dist/types',
+            },
+        }),
     ],
 };
