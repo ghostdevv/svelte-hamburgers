@@ -18,14 +18,14 @@ There are two ways of adding the css:
 
 -   ### CDN
     ```html
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/hamburgers.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/hamburger.min.css" />
     ```
 
 -   ### Importing CSS
     Pick one of:
-    - `svelte-hamburgers/dist/css/hamburgers.css`
-    - `svelte-hamburgers/dist/css/hamburgers.min.css`
-    - `svelte-hamburgers/src/scss/hamburgers.scss`
+    - `svelte-hamburgers/dist/css/hamburger.css`
+    - `svelte-hamburgers/dist/css/hamburger.min.css`
+    - `svelte-hamburgers/src/scss/hamburger.scss`
 
 # How to use?
 
