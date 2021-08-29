@@ -3,6 +3,8 @@
     https://jonsuh.com/hamburgers
 -->
 <script>
+    import { createEventDispatcher } from 'svelte';
+
     /**
      * Open boolean
      * @type {boolean}
@@ -17,6 +19,7 @@
 
 <button
     class="hamburger hamburger--{type} {open && 'is-active'}"
+    on:click
     on:click={() => (open = !open)}>
     <span class="hamburger-box">
         <span class="hamburger-inner" />
