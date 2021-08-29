@@ -3,7 +3,10 @@
     https://jonsuh.com/hamburgers
 -->
 <script>
-    // Required open boolean
+    /**
+     * Open boolean
+     * @type {boolean}
+     */
     export let open;
 
     /**
