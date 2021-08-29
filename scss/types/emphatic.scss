@@ -14,7 +14,7 @@
         }
 
         &::after {
-            top: calc((var(--layer-height)) + (var(--layer-spacing)));
+            top: calc((var(--layer-height, 4px)) + (var(--layer-spacing, 6px)));
             right: 0;
             transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
                 top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
@@ -28,11 +28,11 @@
             background-color: transparent !important;
 
             &::before {
-                left: calc(var(--layer-width) * -2);
-                top: calc(var(--layer-width) * -2);
+                left: calc(var(--layer-width, 30px) * -2);
+                top: calc(var(--layer-width, 30px) * -2);
                 transform: translate3d(
-                        calc(var(--layer-width) * 2),
-                        calc(var(--layer-width) * 2),
+                        calc(var(--layer-width, 30px) * 2),
+                        calc(var(--layer-width, 30px) * 2),
                         0
                     )
                     rotate(45deg);
@@ -41,11 +41,11 @@
             }
 
             &::after {
-                right: calc(var(--layer-width) * -2);
-                top: calc(var(--layer-width) * -2);
+                right: calc(var(--layer-width, 30px) * -2);
+                top: calc(var(--layer-width, 30px) * -2);
                 transform: translate3d(
-                        calc(var(--layer-width) * -2),
-                        calc(var(--layer-width) * 2),
+                        calc(var(--layer-width, 30px) * -2),
+                        calc(var(--layer-width, 30px) * 2),
                         0
                     )
                     rotate(-45deg);

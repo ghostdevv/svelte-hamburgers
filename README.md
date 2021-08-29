@@ -58,19 +58,18 @@ The `open` variable can be then used to handle your menu, for example:
 
 You can use these to customise the hamburger, just provide them as props to the burger component, for example `<Hamburger color="white" />`
 
-| Property           | Type   | Default               | Description                                                                                                                                           |
-| ------------------ | ------ | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type               | string | spin                  | The type of burger you want, you can see the types [here](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md), it should be lowercase. |
-| color              | string | black                 | The color of the burger.                                                                                                                              |
-| activeColor        | string | value of color        | The color of the burger when active.                                                                                                                  |
-| paddingX           | string | 15px                  | The padding on the X axis.                                                                                                                            |
-| paddingY           | string | 15px                  | The padding on the Y axis.                                                                                                                            |
-| layerWidth         | string | 30px                  | The width of the burger.                                                                                                                              |
-| layerHeight        | string | 2px                   | The height of the burger.                                                                                                                             |
-| layerSpacing       | string | 6px                   | The spacing between layers of the burger.                                                                                                             |
-| borderRadius       | string | 4px                   | The border radius of each burger part.                                                                                                                |
-| hoverOpacity       | number | 0.7                   | The opacity amount on hover.                                                                                                                          |
-| activeHoverOpacity | number | value of hoverOpacity | The opacity amount of hover when active.                                                                                                              |
+| Property               | Type   | Default                  | Description                                                                                                                                           |
+|------------------------|--------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| type                   | string | spin                     | The type of burger you want, you can see the types [here](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md), it should be lowercase. |
+| --color                | string | black                    | The color of the burger.                                                                                                                              |
+| --active-color         | string | value of --color         | The color of the burger when active.                                                                                                                  |
+| --padding              | string | 15px                     | The padding.                                                                                                                                          |
+| --layer-width          | string | 30px                     | The width of the burger.                                                                                                                              |
+| --layer-height         | string | 2px                      | The height of the burger.                                                                                                                             |
+| --layer-spacing        | string | 6px                      | The spacing between layers of the burger.                                                                                                             |
+| --border-radius        | string | 4px                      | The border radius of each burger part.                                                                                                                |
+| --hover-opacity        | number | 0.7                      | The opacity amount on hover.                                                                                                                          |
+| --hover-opacity-active | number | value of --hover-opacity | The opacity amount of hover when active.                                                                                                              |
 
 # Support
 
