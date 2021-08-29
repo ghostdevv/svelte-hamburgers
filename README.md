@@ -56,7 +56,7 @@ The `open` variable can be then used to handle your menu, for example:
 
 # Properties
 
-You can use these to customise the hamburger, just provide them as props to the burger component, for example `<Hamburger color="white" />`
+You can use these to customise the hamburger, just provide them as props to the burger component, for example `<Hamburger --color="white" />`
 
 | Property               | Type   | Default                  | Description                                                                                                                                           |
 |------------------------|--------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
