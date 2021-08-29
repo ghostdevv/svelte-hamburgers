@@ -13,6 +13,20 @@ We will save it as a dev dependancy with `-D`
 npm i svelte-hamburgers -D
 ```
 
+# Adding CSS
+There are two ways of adding the css:
+
+-   ### CDN
+    ```html
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/hamburgers.min.css" />
+    ```
+
+-   ### Importing CSS
+    Pick one of:
+    - `svelte-hamburgers/dist/css/hamburgers.css`
+    - `svelte-hamburgers/dist/css/hamburgers.min.css`
+    - `svelte-hamburgers/src/scss/hamburgers.scss`
+
 # How to use?
 
 ```svelte
