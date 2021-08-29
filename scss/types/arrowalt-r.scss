@@ -1,7 +1,7 @@
 /*
-   * Arrow Alt
+   * Arrow Alt Right
    */
-.hamburger--arrowalt {
+.hamburger--arrowalt-r {
     .hamburger-inner {
         &::before {
             transition: top 0.1s 0.1s ease,
@@ -19,11 +19,11 @@
             &::before {
                 top: 0;
                 transform: translate3d(
-                        calc(var(--layer-width) * -0.2),
-                        calc(var(--layer-width) * -0.25),
+                        calc(var(--layer-width, 30px) * 0.2),
+                        calc(var(--layer-width, 30px) * -0.25),
                         0
                     )
-                    rotate(-45deg) scale(0.7, 1);
+                    rotate(45deg) scale(0.7, 1);
                 transition: top 0.1s ease,
                     transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
             }
@@ -31,11 +31,11 @@
             &::after {
                 bottom: 0;
                 transform: translate3d(
-                        calc(var(--layer-width) * -0.2),
-                        calc(var(--layer-width) * 0.25),
+                        calc(var(--layer-width, 30px) * 0.2),
+                        calc(var(--layer-width, 30px) * 0.25),
                         0
                     )
-                    rotate(45deg) scale(0.7, 1);
+                    rotate(-45deg) scale(0.7, 1);
                 transition: bottom 0.1s ease,
                     transform 0.1s 0.1s cubic-bezier(0.895, 0.03, 0.685, 0.22);
             }

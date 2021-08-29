@@ -3,31 +3,35 @@
    */
 .hamburger--slider {
     .hamburger-inner {
-        top: calc(var(--layer-height) / 2);
+        top: calc(var(--layer-height, 4px) / 2);
 
         &::before {
-            top: calc(var(--layer-height) + var(--layer-spacing));
+            top: calc(var(--layer-height, 4px) + var(--layer-spacing, 6px));
             transition-property: transform, opacity;
             transition-timing-function: ease;
             transition-duration: 0.15s;
         }
 
         &::after {
-            top: calc((var(--layer-height) * 2) + (var(--layer-spacing) * 2));
+            top: calc(
+                (var(--layer-height, 4px) * 2) + (var(--layer-spacing, 6px) * 2)
+            );
         }
     }
 
     &.is-active {
         .hamburger-inner {
-            --y-offset: calc(var(--layer-spacing) + var(--layer-height));
+            --y-offset: calc(
+                var(--layer-spacing, 6px) + var(--layer-height, 4px)
+            );
 
             transform: translate3d(0, var(--y-offset), 0) rotate(45deg);
 
             &::before {
                 transform: rotate(-45deg)
                     translate3d(
-                        clac(var(--layer-width) / -7),
-                        calc(var(--layer-spacing) * -1),
+                        clac(var(--layer-width, 30px) / -7),
+                        calc(var(--layer-spacing, 6px) * -1),
                         0
                     );
                 opacity: 0;

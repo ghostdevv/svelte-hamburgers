@@ -1,9 +1,10 @@
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import preprocess from 'svelte-preprocess';
 import svelte from 'rollup-plugin-svelte';
 
 export default {
-    input: 'index.js',
+    input: 'src/main.js',
     output: {
         format: 'iife',
         name: 'app',
@@ -11,6 +12,7 @@ export default {
     },
     plugins: [
         svelte({ preprocess: [preprocess()], emitCss: false }),
-        resolve(),
+        resolve({ browser: true, dedupe: ['svelte'] }),
+        commonjs(),
     ],
 };
