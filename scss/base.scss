@@ -18,6 +18,10 @@
     margin: 0;
     overflow: visible;
 
+    &:active {
+        background-color: transparent;
+    }
+
     &:hover {
         opacity: var(--opacity);
     }
