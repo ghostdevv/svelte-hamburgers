@@ -14,18 +14,26 @@ npm i svelte-hamburgers -D
 ```
 
 # Adding CSS
-There are two ways of adding the css:
+You need to import the base styling and then a style for each [type](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md) you want to use (to mitigate unused css)
 
--   ### CDN
-    ```html
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/hamburger.min.css" />
-    ```
+Base sheet:
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/base.css" />
+```
 
--   ### Importing CSS
-    Pick one of:
-    - `svelte-hamburgers/dist/css/hamburger.css`
-    - `svelte-hamburgers/dist/css/hamburger.min.css`
-    - `svelte-hamburgers/src/scss/hamburger.scss`
+Types:<br />
+Replace `{type}` with the [type you want](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md)
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/types/{type}.css" />
+```
+
+# Sass
+Svelte Hamburgers is written in `scss`, if you would prefer to import the scss files you can do so:
+```scss
+@import 'svelte-hamburgers/scss/base';
+@import 'svelte-hamburgers/scss/types/{type}'; /* Replace {type} with the type you want */
+```
+
 
 # How to use?
 

@@ -8,11 +8,10 @@
   "license": "MIT",
   "scripts": {
     "build": "run-s build:*",
-    "build:css": "sass src/scss/hamburger.scss dist/css/hamburger.css",
-    "build:css-min": "sass src/scss/hamburger.scss dist/css/hamburger.min.css --style=compressed",
+    "build:css": "sass scss:dist/css --style=compressed",
     "build:lib": "rollup -c",
     "dev": "run-p dev:*",
-    "dev:css": "sass src/scss/hamburger.scss dist/css/hamburger.css --watch",
+    "dev:css": "sass scss:dist/css --watch",
     "dev:lib": "rollup -c -w",
     "dev:dev": "cd dev && npm run dev"
   },
