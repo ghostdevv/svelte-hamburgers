@@ -13,7 +13,8 @@
     "dev": "run-p dev:*",
     "dev:css": "sass scss:dist/css --watch",
     "dev:lib": "rollup -c -w",
-    "dev:dev": "cd dev && npm run dev"
+    "dev:dev": "cd dev && npm run dev",
+    "prerel": "np --no-yarn --no-tests --no-release-draft --any-branch"
   },
   "files": [
     "dist",
