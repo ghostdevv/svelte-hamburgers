@@ -19,6 +19,7 @@
   "files": [
     "dist",
     "src",
+    "scss",
     "LICENSE",
     "README.md"
   ],
