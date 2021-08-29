@@ -49,8 +49,5 @@
     "hamburger component",
     "svelte hamburger component",
     "svelte burger component"
-  ],
-  "dependencies": {
-    "vite": "^2.5.1"
-  }
+  ]
 }
