@@ -2,7 +2,6 @@
     "recommendations": [
         "esbenp.prettier-vscode",
         "formulahendry.auto-rename-tag",
-        "formulahendry.auto-close-tag",
         "svelte.svelte-vscode",
         "christian-kohler.npm-intellisense",
         "zignd.html-css-class-completion"
