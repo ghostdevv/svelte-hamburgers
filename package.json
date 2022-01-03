@@ -30,7 +30,7 @@
     "rollup": "^2.56.3",
     "rollup-plugin-svelte": "^7.1.0",
     "sass": "^1.32.12",
-    "sveld": "^0.10.1",
+    "sveld": "^0.12.0",
     "svelte": "^3.38.2"
   },
   "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
