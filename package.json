@@ -8,13 +8,6 @@
     "dev": "svelte-kit dev",
     "package": "svelte-kit sync && svelte-kit package"
   },
-  "files": [
-    "dist",
-    "src",
-    "scss",
-    "LICENSE",
-    "README.md"
-  ],
   "devDependencies": {
     "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
