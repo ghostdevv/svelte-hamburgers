@@ -1,5 +1,5 @@
 <script>
-    import Hamburger from 'svelte-hamburgers';
+    import { Hamburger } from '$lib';
 
     const types = [
         '3dx',
@@ -46,9 +46,6 @@
 </cards>
 
 <style lang="scss" global>
-    @import 'svelte-hamburgers/scss/types/_all.scss';
-    @import 'svelte-hamburgers/scss/base.scss';
-
     *,
     *::before,
     *::after {

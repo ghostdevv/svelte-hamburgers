@@ -1,20 +1,12 @@
 {
   "name": "svelte-hamburgers",
   "version": "3.0.1",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "svelte": "./src/index.js",
-  "types": "./dist/types/index.d.ts",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build": "run-s build:*",
-    "build:css": "sass scss:dist/css --style=compressed",
-    "build:lib": "rollup -c",
-    "dev": "run-p dev:*",
-    "dev:css": "sass scss:dist/css --watch",
-    "dev:lib": "rollup -c -w",
-    "dev:dev": "cd dev && npm run dev",
-    "prerel": "npm run build && np --no-yarn --no-tests --no-release-draft --any-branch"
+    "build": "svelte-kit build",
+    "dev": "svelte-kit dev",
+    "package": "svelte-kit package"
   },
   "files": [
     "dist",
@@ -24,14 +16,13 @@
     "README.md"
   ],
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^21.0.0",
-    "@rollup/plugin-node-resolve": "^13.0.4",
-    "npm-run-all": "^4.1.5",
-    "rollup": "^2.56.3",
-    "rollup-plugin-svelte": "^7.1.0",
     "sass": "^1.32.12",
-    "sveld": "^0.13.1",
-    "svelte": "^3.38.2"
+    "svelte": "^3.38.2",
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "svelte-preprocess": "^4.10.1",
+    "tslib": "^2.3.1",
+    "typescript": "~4.6.2"
   },
   "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
   "author": "GHOST",
