@@ -3,7 +3,7 @@
 The ease to use Hamburger menu component for Svelte! Fully customisable with an extensive set of options, powered by a modified version of [hamburgers.css](https://github.com/jonsuh/hamburgers).
 
 Example of how to use svelte-hamburgers, [view the repl here](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4)
-[![](https://i.imgur.com/P7p0KfR.gif)](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4)
+[![](https://i.imgur.com/M12rZCQ.gif)](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4)
 
 # Install
 
