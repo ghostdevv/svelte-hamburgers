@@ -1,7 +1,7 @@
-<script>
-    import Hamburger from 'svelte-hamburgers';
+<script lang="ts">
+    import { Hamburger, type HamburgerType } from '$lib';
 
-    const types = [
+    const types: HamburgerType[] = [
         '3dx',
         '3dx-r',
         '3dy',
@@ -46,9 +46,6 @@
 </cards>
 
 <style lang="scss" global>
-    @import 'svelte-hamburgers/scss/types/_all.scss';
-    @import 'svelte-hamburgers/scss/base.scss';
-
     *,
     *::before,
     *::after {

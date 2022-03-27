@@ -9,12 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v1
         with:
-          node-version: 14
+          node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm i
-      - run: npm run build
-      - run: npm publish
+
+      - name: Setup PNPM
+        uses: pnpm/action-setup@v2.0.1
+        with:
+            version: 6.23.2
+
+      - run: pnpm i
+      - run: pnpm run build
+      - run: pnpm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_TOKEN: ${{secrets.NPM_TOKEN}}
