@@ -1,7 +1,7 @@
-<script>
-    import { Hamburger } from '$lib';
+<script lang="ts">
+    import { Hamburger, type HamburgerType } from '$lib';
 
-    const types = [
+    const types: HamburgerType[] = [
         '3dx',
         '3dx-r',
         '3dy',
