@@ -13,33 +13,12 @@ We will save it as a dev dependancy with `-D`
 npm i svelte-hamburgers -D
 ```
 
-# Adding CSS
-You need to import the base styling and then a style for each [type](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md) you want to use (to mitigate unused css)
-
-Base sheet:
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/base.css" />
-```
-
-Types:<br />
-Replace `{type}` with the [type you want](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md)
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/svelte-hamburgers@3/dist/css/types/{type}.css" />
-```
-
-# Sass
-Svelte Hamburgers is written in `scss`, if you would prefer to import the scss files you can do so:
-```scss
-@import 'svelte-hamburgers/scss/base';
-@import 'svelte-hamburgers/scss/types/{type}'; /* Replace {type} with the type you want */
-```
-
-
 # How to use?
 
-```svelte
+```html
 <script>
-    import Hamburger from 'svelte-hamburgers';
+    import { Hamburger } from 'svelte-hamburgers';
+
     let open;
 </script>
 
@@ -53,6 +32,23 @@ The `open` variable can be then used to handle your menu, for example:
     <!-- show menu -->
 {/if}
 ```
+
+# Migrating
+
+If you are migrating from `3.x.x` to `4.x.x` heres what you need to know:
+
+- CSS is now included! This means no more importing the css you need, you can remove the cdn tags you had before
+
+- The `Hamburger` component is a named import:
+    ```html
+    <script>
+        // Old way
+        import Hamburger from 'svelte-hamburgers';
+
+        // New way
+        import { Hamburger } from 'svelte-hamburgers';
+    </script>
+    ```
 
 # Properties
 
