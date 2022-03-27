@@ -6,8 +6,9 @@
     /**
      * Open boolean
      * @type {boolean}
+     * @default false
      */
-    export let open;
+    export let open = false;
 
     /**
      * Hamburger type
