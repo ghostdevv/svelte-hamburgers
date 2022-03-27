@@ -22,6 +22,7 @@
 
 <button
     class="hamburger hamburger--{type}"
+    aria-label="Hamburger menu"
     class:is-active={open}
     on:click
     on:click={() => (open = !open)}>
