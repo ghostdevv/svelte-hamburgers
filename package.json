@@ -16,7 +16,7 @@
     "README.md"
   ],
   "devDependencies": {
-    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-vercel": "next",
     "@sveltejs/kit": "next",
     "sass": "^1.32.12",
     "svelte": "^3.38.2",
