@@ -21,7 +21,7 @@ jobs:
             version: 6.23.2
 
       - run: pnpm i
-      - run: pnpm run build
-      - run: pnpm publish
+      - run: pnpm package
+      - run: pnpm publish --no-git-checks
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
