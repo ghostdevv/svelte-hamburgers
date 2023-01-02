@@ -9,11 +9,11 @@ const config = {
 
     kit: {
         adapter: adapter(),
+    },
 
-        package: {
-            exports: (file) => {
-                return file === 'index.ts';
-            },
+    package: {
+        exports: (file) => {
+            return file === 'index.ts';
         },
     },
 };
