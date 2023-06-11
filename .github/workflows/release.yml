@@ -12,19 +12,19 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v2.0.1
         with:
-            version: 6.23.2
+            version: 8.6.1
 
       - run: pnpm i
       - run: pnpm package
 
       - run: |
           pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
-          cd package && pnpm publish --no-git-checks
+          pnpm publish --no-git-checks
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
