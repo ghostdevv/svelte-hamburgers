@@ -33,7 +33,7 @@
     "vite": "^4.3.9"
   },
   "peerDependencies": {
-    "svelte": "^3.46.4"
+    "svelte": "^3.46.4 || ^4.0.0"
   },
   "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
   "author": "GHOST",
