@@ -19,12 +19,13 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite dev",
-    "package": "svelte-package"
+    "package": "svelte-package && publint"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.1.0",
     "@sveltejs/kit": "^1.25.1",
     "@sveltejs/package": "^2.2.2",
+    "publint": "^0.2.3",
     "sass": "^1.69.0",
     "svelte": "^4.2.1",
     "svelte-preprocess": "^5.0.4",
