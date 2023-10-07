@@ -18,11 +18,18 @@
      * @default "spin"
      */
     export let type: HamburgerType = 'spin';
+    
+    /**
+     * AriaLabel string
+     * @type {string}
+     * @default "Hamburger menu"
+     */
+    export let ariaLabel: string = 'Hamburger menu'
 </script>
 
 <button
     class="hamburger hamburger--{type}"
-    aria-label="Hamburger menu"
+    aria-label={ariaLabel}
     class:is-active={open}
     on:click
     on:click={() => (open = !open)}>
