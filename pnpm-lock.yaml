@@ -28,7 +28,7 @@ devDependencies:
     version: 5.0.4(sass@1.69.0)(svelte@4.2.1)(typescript@5.2.2)
   svelte2tsx:
     specifier: ^0.6.22
-    version: 0.6.22(svelte@4.2.1)(typescript@5.2.2)
+    version: 0.6.25(svelte@4.2.1)(typescript@5.2.2)
   tslib:
     specifier: ^2.6.2
     version: 2.6.2
@@ -335,7 +335,7 @@ packages:
       sade: 1.8.1
       semver: 7.5.4
       svelte: 4.2.1
-      svelte2tsx: 0.6.22(svelte@4.2.1)(typescript@5.2.2)
+      svelte2tsx: 0.6.25(svelte@4.2.1)(typescript@5.2.2)
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -1016,10 +1016,10 @@ packages:
       typescript: 5.2.2
     dev: true
 
-  /svelte2tsx@0.6.22(svelte@4.2.1)(typescript@5.2.2):
-    resolution: {integrity: sha512-eFCfz0juaWeanbwGeQV21kPMwH3LKhfrUYRy1PqRmlieuHvJs8VeK7CaoHJdpBZWCXba2cltHVdywJmwOGhbww==}
+  /svelte2tsx@0.6.25(svelte@4.2.1)(typescript@5.2.2):
+    resolution: {integrity: sha512-hhBKL5X9gGvKQAZ9xLoHnbE9Yb00HxEZJlxcj2drxWK+Tpqcs/bnodjSfCGbqEhvNaUXYNbVL7s4dEXT+o0f6w==}
     peerDependencies:
-      svelte: ^3.55 || ^4.0.0-next.0 || ^4.0
+      svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
     dependencies:
       dedent-js: 1.0.1
