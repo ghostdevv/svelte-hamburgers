@@ -34,7 +34,7 @@
     on:click
     on:click={() => (open = !open)}>
     <span class="hamburger-box">
-        <span class="hamburger-inner" />
+        <span class="hamburger-inner"></span>
     </span>
 </button>
 
