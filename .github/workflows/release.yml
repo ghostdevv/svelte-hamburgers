@@ -1,4 +1,4 @@
-name: svelte-hamburgers Package
+name: Release Package
 
 on:
   release:
@@ -8,22 +8,28 @@ jobs:
   publish-npm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v1
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           registry-url: https://registry.npmjs.org/
 
       - name: Setup PNPM
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v3.0.0
         with:
-            version: 8.6.1
+            version: 8.12.1
 
-      - run: pnpm i
-      - run: pnpm package
+      - name: Install
+        run: pnpm install
 
-      - run: |
+      - name: Build
+        run: pnpm package
+
+      - name: Publish
+        run: |
           pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
           pnpm publish --no-git-checks
         env:

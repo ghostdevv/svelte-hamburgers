@@ -22,17 +22,17 @@
     "package": "svelte-package && publint"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^2.1.0",
-    "@sveltejs/kit": "^1.25.1",
-    "@sveltejs/package": "^2.2.2",
-    "publint": "^0.2.3",
-    "sass": "^1.69.0",
-    "svelte": "^4.2.1",
-    "svelte-preprocess": "^5.0.4",
-    "svelte2tsx": "^0.6.22",
-    "tslib": "^2.6.2",
+    "@sveltejs/adapter-auto": "^2.1.1",
+    "@sveltejs/kit": "^1.30.4",
+    "@sveltejs/package": "^2.3.2",
+    "publint": "^0.2.9",
+    "sass": "^1.77.8",
+    "svelte": "^4.2.18",
+    "svelte-preprocess": "^5.1.4",
+    "svelte2tsx": "^0.6.27",
+    "tslib": "^2.6.3",
     "typescript": "~5.2.2",
-    "vite": "^4.4.11"
+    "vite": "^4.5.3"
   },
   "peerDependencies": {
     "svelte": "^3.46.4 || ^4.0.0"
