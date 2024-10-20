@@ -210,12 +210,12 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 8px;
         margin-top: 2rem;
     }
 
-    $colors: LightPink, LightSkyBlue, LightYellow, LightGreen, Lavender,
-        PeachPuff;
+    $colors: hsl(351, 50%, 46%), hsl(203, 42%, 35%), hsl(60, 50%, 54%),
+        hsl(120, 23%, 35%), Lavender, hsl(28, 50%, 46%);
 
     @for $i from 1 through length($colors) {
         .type:nth-child(#{length($colors)}n + #{$i}) {
@@ -229,6 +229,7 @@
         width: 150px;
         height: 150px;
         color: black;
+        border: none;
     }
 
     table {
