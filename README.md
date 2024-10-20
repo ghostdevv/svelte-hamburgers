@@ -25,6 +25,8 @@ If you want to use the Svelte 3/4 version of this library, please checkout [svel
 <Hamburger />
 ```
 
+[View the full docs](https://svelte-hamburgers.willow.codes).
+
 # Props
 
 | Property                 | Type                                   | Default Value              | Description                                                                                                                                           |

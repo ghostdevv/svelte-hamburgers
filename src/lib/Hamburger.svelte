@@ -22,7 +22,7 @@
     {/if}
     ```
 
-    [View the full docs](https://github.com/ghostdevv/svelte-hamburgers/blob/main/README.md).
+    [View the full docs](https://svelte-hamburgers.willow.codes).
 -->
 
 <script lang="ts">
@@ -39,7 +39,7 @@
         /**
          * The type of the hamburger
          * @default "spin"
-         * @see https://svelte-hamburgers.pages.dev
+         * @see https://svelte-hamburgers.willow.codes#types
          */
         type?: HamburgerType;
 
