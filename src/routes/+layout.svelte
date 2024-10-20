@@ -19,4 +19,9 @@
 		max-width: 1400px;
 		margin: 0 auto;
 	}
+
+    :global(pre) {
+        background-color: transparent !important;
+        width: 100%;
+    }
 </style>

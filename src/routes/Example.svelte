@@ -37,8 +37,4 @@
         padding: 8px;
     }
 
-    :global(pre) {
-        background-color: transparent !important;
-        width: 100%;
-    }
 </style>
