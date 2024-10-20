@@ -27,7 +27,7 @@
 
 <script lang="ts">
     import type { MouseEventHandler } from 'svelte/elements';
-    import type { HamburgerType } from './types.d';
+    import type { HamburgerType } from './types';
 
     interface Props {
         /**

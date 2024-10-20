@@ -1,2 +1,2 @@
 export { default as Hamburger } from './Hamburger.svelte';
-export type { HamburgerType } from './types.d';
+export { HAMBURGER_TYPES, type HamburgerType } from './types';
