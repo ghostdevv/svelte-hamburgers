@@ -5,6 +5,7 @@
   "type": "module",
   "types": "./dist/index.d.ts",
   "svelte": "./dist/index.js",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -37,7 +38,7 @@
     "svelte": "^5.0.0"
   },
   "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
-  "author": "GHOST",
+  "author": "Willow GHOST <ghostdevbusiness@gmail.com> (https://ghostdev.xyz)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ghostdevv/svelte-hamburgers.git"
