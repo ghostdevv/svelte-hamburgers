@@ -98,6 +98,6 @@
 </button>
 
 <style lang="scss">
-    @import '../scss/base';
-    @import '../scss/types/_all';
+    @use '../scss/base' as *;
+    @use '../scss/types/_all' as *;
 </style>

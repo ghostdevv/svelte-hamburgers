@@ -36,6 +36,8 @@
 </section>
 
 <style lang="scss">
+    @use 'sass:list';
+
     .gif {
         display: grid;
         grid-template-columns: repeat(4, 264px);
@@ -61,12 +63,12 @@
         height: 100%;
     }
 
-    $colors: LightPink, LightSkyBlue, LightYellow, LightGreen, Lavender,
-        PeachPuff;
+    $colors: hsl(351, 50%, 46%), hsl(203, 42%, 35%), hsl(60, 50%, 54%),
+        hsl(120, 23%, 35%), Lavender, hsl(28, 50%, 46%);
 
-    @for $i from 1 through length($colors) {
-        .type:nth-child(#{length($colors)}n + #{$i}) {
-            background: nth($colors, $i);
+    @for $i from 1 through list.length($colors) {
+        .type:nth-child(#{list.length($colors)}n + #{$i}) {
+            background: list.nth($colors, $i);
         }
     }
 
