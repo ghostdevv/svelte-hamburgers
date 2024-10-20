@@ -56,6 +56,7 @@ You can use these to customise the hamburger, just provide them as props to the 
 # Migrating to svelte-hamburgers v5
 
 -   Now requires Svelte 5, if you require Svelte 3/4 support checkout [svelte-hamburgers@4](https://www.npmjs.com/package/svelte-hamburgers/v/4.2.1).
+-   We now call `stopPropagation` on hamburger click event for you.
 
 View the full [changelog on GitHub](https://github.com/ghostdevv/svelte-hamburgers/releases).
 

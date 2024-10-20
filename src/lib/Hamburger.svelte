@@ -67,6 +67,7 @@
     aria-label={ariaLabel}
     class:is-active={open}
     onclick={(event) => {
+        event.stopPropagation();
         open = !open;
         onclick?.(event);
     }}>
