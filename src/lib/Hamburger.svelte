@@ -26,36 +26,50 @@
 -->
 
 <script lang="ts">
+    import type { MouseEventHandler } from 'svelte/elements';
     import type { HamburgerType } from './types.d';
 
-    /**
-     * Open boolean
-     * @type {boolean}
-     * @default false
-     */
-    export let open: boolean = false;
+    interface Props {
+        /**
+         * Open boolean
+         * @default false
+         */
+        open?: boolean;
 
-    /**
-     * Hamburger type
-     * @type {HamburgerType}
-     * @default "spin"
-     */
-    export let type: HamburgerType = 'spin';
-    
-    /**
-     * AriaLabel string
-     * @type {string}
-     * @default "Hamburger menu"
-     */
-    export let ariaLabel: string = 'Hamburger menu'
+        /**
+         * Hamburger type
+         * @default "spin"
+         */
+        type?: HamburgerType;
+
+        /**
+         * AriaLabel string
+         * @default "Hamburger menu"
+         */
+        ariaLabel?: string;
+
+        /**
+         * Hamburger onclick event
+         */
+        onclick?: MouseEventHandler<HTMLButtonElement>;
+    }
+
+    let {
+        onclick,
+        open = $bindable(false),
+        type = 'spin',
+        ariaLabel = 'Hamburger menu',
+    }: Props = $props();
 </script>
 
 <button
     class="hamburger hamburger--{type}"
     aria-label={ariaLabel}
     class:is-active={open}
-    on:click
-    on:click={() => (open = !open)}>
+    onclick={(event) => {
+        open = !open;
+        onclick?.(event);
+    }}>
     <span class="hamburger-box">
         <span class="hamburger-inner"></span>
     </span>
