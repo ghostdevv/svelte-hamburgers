@@ -31,40 +31,61 @@
 
     interface Props {
         /**
-         * Open boolean
+         * Controls and represents whether the hamburger is open
          * @default false
          */
         open?: boolean;
 
         /**
-         * Hamburger type
+         * The type of the hamburger
          * @default "spin"
+         * @see https://svelte-hamburgers.pages.dev
          */
         type?: HamburgerType;
 
         /**
-         * AriaLabel string
+         * Can be used to add a tooltip, also controls the default value of the `ariaLabel` prop
          * @default "Hamburger menu"
+         * @see https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title
+         */
+        title?: string;
+
+        /**
+         * A label that describes the hamburger menu.
+         * Defaults to the value of the `title` prop, which defaults to `Hamburger menu`.
+         * @see https://www.w3.org/TR/wai-aria-1.1/#aria-label
          */
         ariaLabel?: string;
 
         /**
-         * Hamburger onclick event
+         * This identifies the element(s) whos presence is controlled by the hamburger menu
+         * @see https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls
+         * @see https://www.w3.org/TR/wai-aria-1.1/#aria-controls
+         */
+        ariaControls?: string;
+
+        /**
+         * Fires when the hamburger is clicked. This event won't propagate.
          */
         onclick?: MouseEventHandler<HTMLButtonElement>;
     }
 
     let {
-        onclick,
         open = $bindable(false),
         type = 'spin',
-        ariaLabel = 'Hamburger menu',
+        title = 'Hamburger menu',
+        ariaControls,
+        ariaLabel = title,
+        onclick,
     }: Props = $props();
 </script>
 
 <button
-    class="hamburger hamburger--{type}"
+    {title}
     aria-label={ariaLabel}
+    aria-controls={ariaControls}
+    aria-expanded={open}
+    class="hamburger hamburger--{type}"
     class:is-active={open}
     onclick={(event) => {
         event.stopPropagation();

@@ -35,28 +35,31 @@ The `open` variable can be then used to handle your menu, for example:
 {/if}
 ```
 
-# Properties
+# Props
 
-You can use these to customise the hamburger, just provide them as props to the burger component, for example `<Hamburger --color="white" />`
-
-| Property               | Type   | Default                  | Description                                                                                                                                           |
-| ---------------------- | ------ | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| type                   | string | spin                     | The type of burger you want, you can see the types [here](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md), it should be lowercase. |
-| ariaLabel              | string | Hamburger menu           | The aria label of the burger.                                                                                                                         |
-| --color                | string | black                    | The color of the burger.                                                                                                                              |
-| --active-color         | string | value of --color         | The color of the burger when active.                                                                                                                  |
-| --padding              | string | 15px                     | The padding.                                                                                                                                          |
-| --layer-width          | string | 30px                     | The width of the burger.                                                                                                                              |
-| --layer-height         | string | 2px                      | The height of the burger.                                                                                                                             |
-| --layer-spacing        | string | 6px                      | The spacing between layers of the burger.                                                                                                             |
-| --border-radius        | string | 4px                      | The border radius of each burger part.                                                                                                                |
-| --hover-opacity        | number | 0.7                      | The opacity amount on hover.                                                                                                                          |
-| --hover-opacity-active | number | value of --hover-opacity | The opacity amount of hover when active.                                                                                                              |
+| Property                 | Type                                   | Default                    | Description                                                                                                                                           |
+| ------------------------ | -------------------------------------- | -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `open`                   | `string`                               | `false`                    | Controls and represents whether the hamburger is open.                                                                                                |
+| `type`                   | `string`                               | `spin`                     | The type of burger you want, you can see the types [here](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md), it should be lowercase. |
+| `title`                  | `string`                               | `Hamburger menu`           | Can be used to add a tooltip, also controls the default value of the `ariaLabel` prop.                                                                |
+| `ariaLabel`              | `string`                               | value of `title`           | A label that describes the hamburger menu.                                                                                                            |
+| `ariaControls`           | `string`                               | n/a                        | This identifies the element(s) whos presence is controlled by the hamburger menu.                                                                     |
+| `--color`                | `string`                               | `black`                    | The color of the burger.                                                                                                                              |
+| `--active-color`         | `string`                               | value of `--color`         | The color of the burger when active.                                                                                                                  |
+| `--padding`              | `string`                               | `15px`                     | The padding.                                                                                                                                          |
+| `--layer-width`          | `string`                               | `30px`                     | The width of the burger.                                                                                                                              |
+| `--layer-height`         | `string`                               | `2px`                      | The height of the burger.                                                                                                                             |
+| `--layer-spacing`        | `string`                               | `6px`                      | The spacing between layers of the burger.                                                                                                             |
+| `--border-radius`        | `string`                               | `4px`                      | The border radius of each burger part.                                                                                                                |
+| `--hover-opacity`        | `number`                               | `0.7`                      | The opacity amount on hover.                                                                                                                          |
+| `--hover-opacity-active` | `number`                               | value of `--hover-opacity` | The opacity amount of hover when active.                                                                                                              |
+| `onclick`                | `MouseEventHandler<HTMLButtonElement>` | n/a                        | Fires when the hamburger is clicked. This event won't propagate.                                                                                      |
 
 # Migrating to svelte-hamburgers v5
 
 -   Now requires Svelte 5, if you require Svelte 3/4 support checkout [svelte-hamburgers@4](https://www.npmjs.com/package/svelte-hamburgers/v/4.2.1).
 -   We now call `stopPropagation` on hamburger click event for you.
+-   The `ariaLabel` prop now gets it's default value from the `title` prop.
 
 View the full [changelog on GitHub](https://github.com/ghostdevv/svelte-hamburgers/releases).
 
