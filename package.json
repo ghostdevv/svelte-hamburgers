@@ -1,11 +1,10 @@
 {
   "name": "svelte-hamburgers",
-  "version": "5.0.0",
+  "version": "4.2.1",
   "license": "MIT",
   "type": "module",
   "types": "./dist/index.d.ts",
   "svelte": "./dist/index.js",
-  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -23,25 +22,23 @@
     "package": "svelte-package && publint"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.2.5",
-    "@sveltejs/kit": "^2.7.2",
-    "@sveltejs/package": "^2.3.5",
-    "@sveltejs/vite-plugin-svelte": "^4.0.0",
-    "dedent": "^1.5.3",
-    "ghostsui": "2.0.0-beta.1",
-    "publint": "^0.2.11",
-    "sass": "^1.80.3",
-    "shiki": "^1.22.0",
-    "svelte": "^5.0.3",
-    "tslib": "^2.8.0",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.9"
+    "@sveltejs/adapter-auto": "^2.1.1",
+    "@sveltejs/kit": "^1.30.4",
+    "@sveltejs/package": "^2.3.2",
+    "publint": "^0.2.9",
+    "sass": "^1.77.8",
+    "svelte": "^4.2.18",
+    "svelte-preprocess": "^5.1.4",
+    "svelte2tsx": "^0.6.27",
+    "tslib": "^2.6.3",
+    "typescript": "~5.2.2",
+    "vite": "^4.5.3"
   },
   "peerDependencies": {
-    "svelte": "^5.0.0"
+    "svelte": "^3.46.4 || ^4.0.0"
   },
   "description": "Svelte Hamburgers is a component based on the popular hamburgers.css",
-  "author": "Willow GHOST <ghostdevbusiness@gmail.com> (https://ghostdev.xyz)",
+  "author": "GHOST",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ghostdevv/svelte-hamburgers.git"
