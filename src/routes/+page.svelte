@@ -37,10 +37,10 @@
 </script>
 
 <cards>
-    {#each types as ty}
+    {#each types as type}
         <card>
-            <span>{ty}</span>
-            <Hamburger type={ty} />
+            <span>{type}</span>
+            <Hamburger {type} />
         </card>
     {/each}
 </cards>
