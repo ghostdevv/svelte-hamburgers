@@ -1,7 +1,30 @@
 <!--
-    A Svelte component implementation of hamburgers.css by Jonathan Suh
-    https://jonsuh.com/hamburgers
+    @component
+    
+    A Svelte component implementation of [hamburgers.css](https://jonsuh.com/hamburgers)
+    by Jonathan Suh
+
+    ```svelte
+    <script lang="ts">
+        import { Hamburger } from 'svelte-hamburgers';
+
+        let open = $state(false);
+    </script>
+
+    <Hamburger bind:open />
+    ```
+
+    The `open` variable can be then used to handle your menu, for example:
+
+    ```svelte
+    {#if open}
+        Show your menu here!
+    {/if}
+    ```
+
+    [View the full docs](https://github.com/ghostdevv/svelte-hamburgers/blob/main/README.md).
 -->
+
 <script lang="ts">
     import type { HamburgerType } from './types.d';
 
