@@ -51,7 +51,7 @@ If you want to use the Svelte 3/4 version of this library, please checkout [svel
 
 -   Now requires Svelte 5, if you require Svelte 3/4 support checkout [svelte-hamburgers@4](https://www.npmjs.com/package/svelte-hamburgers/v/4.2.1).
 -   We now call `stopPropagation` on hamburger click event for you.
--   The `ariaLabel` prop now gets it's default value from the `title` prop.
+-   The `ariaLabel` prop now gets its default value from the `title` prop.
 
 View the full [changelog on GitHub](https://github.com/ghostdevv/svelte-hamburgers/releases).
 
