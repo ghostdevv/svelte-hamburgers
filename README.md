@@ -1,11 +1,9 @@
 # 🍔 Svelte Hamburgers
 
-Works with Svelte 3 & 4!
-
 The ease to use Hamburger menu component for Svelte! Fully customisable with an extensive set of options, powered by a modified version of [hamburgers.css](https://github.com/jonsuh/hamburgers).
 
-Example of how to use svelte-hamburgers, [view the repl here](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4)
-[![](https://i.imgur.com/M12rZCQ.gif)](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4)
+<!-- Example of how to use svelte-hamburgers, [view the repl here](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4)
+[![](https://i.imgur.com/M12rZCQ.gif)](https://svelte.dev/repl/c94eebb874584f2fb62c0303738b7509?version=3.42.4) -->
 
 # Install
 
@@ -15,13 +13,15 @@ We will save it as a dev dependancy with `-D`
 npm i svelte-hamburgers -D
 ```
 
+If you want to use the Svelte 3/4 version of this library, please checkout [svelte-hamburgers@4](https://www.npmjs.com/package/svelte-hamburgers/v/4.2.1).
+
 # How to use?
 
-```html
-<script>
+```svelte
+<script lang="ts">
     import { Hamburger } from 'svelte-hamburgers';
 
-    let open;
+    let open = $state(false);
 </script>
 
 <Hamburger bind:open />
@@ -35,29 +35,12 @@ The `open` variable can be then used to handle your menu, for example:
 {/if}
 ```
 
-# Migrating
-
-If you are migrating from `3.x.x` to `4.x.x` heres what you need to know:
-
-- CSS is now included! This means no more importing the css you need, you can remove the cdn tags you had before
-
-- The `Hamburger` component is a named import:
-    ```html
-    <script>
-        // Old way
-        import Hamburger from 'svelte-hamburgers';
-
-        // New way
-        import { Hamburger } from 'svelte-hamburgers';
-    </script>
-    ```
-
 # Properties
 
 You can use these to customise the hamburger, just provide them as props to the burger component, for example `<Hamburger --color="white" />`
 
 | Property               | Type   | Default                  | Description                                                                                                                                           |
-|------------------------|--------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ------ | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | type                   | string | spin                     | The type of burger you want, you can see the types [here](https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md), it should be lowercase. |
 | ariaLabel              | string | Hamburger menu           | The aria label of the burger.                                                                                                                         |
 | --color                | string | black                    | The color of the burger.                                                                                                                              |
@@ -69,6 +52,12 @@ You can use these to customise the hamburger, just provide them as props to the 
 | --border-radius        | string | 4px                      | The border radius of each burger part.                                                                                                                |
 | --hover-opacity        | number | 0.7                      | The opacity amount on hover.                                                                                                                          |
 | --hover-opacity-active | number | value of --hover-opacity | The opacity amount of hover when active.                                                                                                              |
+
+# Migrating to svelte-hamburgers v5
+
+-   Now requires Svelte 5, if you require Svelte 3/4 support checkout [svelte-hamburgers@4](https://www.npmjs.com/package/svelte-hamburgers/v/4.2.1).
+
+View the full [changelog on GitHub](https://github.com/ghostdevv/svelte-hamburgers/releases).
 
 # Support
 
