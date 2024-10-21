@@ -1,82 +1,82 @@
 // Hamburger
 // ==================================================
 .hamburger {
-    padding: var(--padding, 15px);
-    display: inline-block;
-    cursor: pointer;
+	padding: var(--padding, 15px);
+	display: inline-block;
+	cursor: pointer;
 
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
 
-    // Normalize (<button>)
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible;
+	// Normalize (<button>)
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	overflow: visible;
 
-    &:active {
-        background-color: transparent !important;
-    }
+	&:active {
+		background-color: transparent !important;
+	}
 
-    &:hover {
-        opacity: var(--hover-opacity, 0.7);
-    }
+	&:hover {
+		opacity: var(--hover-opacity, 0.7);
+	}
 
-    &.is-active {
-        &:hover {
-            opacity: var(--hover-opacity-active, var(--hover-opacity, 0.7));
-        }
+	&.is-active {
+		&:hover {
+			opacity: var(--hover-opacity-active, var(--hover-opacity, 0.7));
+		}
 
-        .hamburger-inner,
-        .hamburger-inner::before,
-        .hamburger-inner::after {
-            background-color: var(--active-color, var(--color, black));
-        }
-    }
+		.hamburger-inner,
+		.hamburger-inner::before,
+		.hamburger-inner::after {
+			background-color: var(--active-color, var(--color, black));
+		}
+	}
 }
 
 .hamburger-box {
-    width: var(--layer-width, 30px);
-    height: calc(var(--layer-height, 4px) * 3 + var(--layer-spacing, 6px) * 2);
-    display: inline-block;
-    position: relative;
+	width: var(--layer-width, 30px);
+	height: calc(var(--layer-height, 4px) * 3 + var(--layer-spacing, 6px) * 2);
+	display: inline-block;
+	position: relative;
 }
 
 .hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: var(--layer-height, 4px) / -2;
+	display: block;
+	top: 50%;
+	margin-top: var(--layer-height, 4px) / -2;
 
-    &,
-    &::before,
-    &::after {
-        width: var(--layer-width, 30px);
-        height: var(--layer-height, 4px);
-        background-color: var(--color, black);
-        border-radius: var(--border-radius, 4px);
-        position: absolute;
-        transition-property: transform;
-        transition-duration: 0.15s;
-        transition-timing-function: ease;
-    }
+	&,
+	&::before,
+	&::after {
+		width: var(--layer-width, 30px);
+		height: var(--layer-height, 4px);
+		background-color: var(--color, black);
+		border-radius: var(--border-radius, 4px);
+		position: absolute;
+		transition-property: transform;
+		transition-duration: 0.15s;
+		transition-timing-function: ease;
+	}
 
-    &::before,
-    &::after {
-        content: '';
-        display: block;
-    }
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+	}
 
-    &::before {
-        top: calc((var(--layer-spacing, 6px) + var(--layer-height, 4px)) * -1);
-    }
+	&::before {
+		top: calc((var(--layer-spacing, 6px) + var(--layer-height, 4px)) * -1);
+	}
 
-    &::after {
-        bottom: calc(
-            (var(--layer-spacing, 6px) + var(--layer-height, 4px)) * -1
-        );
-    }
+	&::after {
+		bottom: calc(
+			(var(--layer-spacing, 6px) + var(--layer-height, 4px)) * -1
+		);
+	}
 }

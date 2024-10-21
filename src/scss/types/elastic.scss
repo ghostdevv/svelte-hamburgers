@@ -2,43 +2,43 @@
    * Elastic
    */
 .hamburger--elastic {
-    .hamburger-inner {
-        top: var(--layer-height, 4px) / 2;
-        transition-duration: 0.275s;
-        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	.hamburger-inner {
+		top: var(--layer-height, 4px) / 2;
+		transition-duration: 0.275s;
+		transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-        &::before {
-            top: calc(var(--layer-height, 4px) + var(--layer-spacing, 6px));
-            transition: opacity 0.125s 0.275s ease;
-        }
+		&::before {
+			top: calc(var(--layer-height, 4px) + var(--layer-spacing, 6px));
+			transition: opacity 0.125s 0.275s ease;
+		}
 
-        &::after {
-            top: calc(
-                (var(--layer-height, 4px) * 2) + (var(--layer-spacing, 6px) * 2)
-            );
-            transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-    }
+		&::after {
+			top: calc(
+				(var(--layer-height, 4px) * 2) + (var(--layer-spacing, 6px) * 2)
+			);
+			transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+	}
 
-    &.is-active {
-        .hamburger-inner {
-            --y-offset: calc(
-                var(--layer-spacing, 6px) + var(--layer-height, 4px)
-            );
+	&.is-active {
+		.hamburger-inner {
+			--y-offset: calc(
+				var(--layer-spacing, 6px) + var(--layer-height, 4px)
+			);
 
-            transform: translate3d(0, var(--y-offset), 0) rotate(135deg);
-            transition-delay: 0.075s;
+			transform: translate3d(0, var(--y-offset), 0) rotate(135deg);
+			transition-delay: 0.075s;
 
-            &::before {
-                transition-delay: 0s;
-                opacity: 0;
-            }
+			&::before {
+				transition-delay: 0s;
+				opacity: 0;
+			}
 
-            &::after {
-                transform: translate3d(0, calc(var(--y-offset) * -2), 0)
-                    rotate(-270deg);
-                transition-delay: 0.075s;
-            }
-        }
-    }
+			&::after {
+				transform: translate3d(0, calc(var(--y-offset) * -2), 0)
+					rotate(-270deg);
+				transition-delay: 0.075s;
+			}
+		}
+	}
 }

@@ -1,9 +1,9 @@
 <script lang="ts">
 	import 'ghostsui';
 	import type { Snippet } from 'svelte';
-	
-	interface Props { 
-		children: Snippet
+
+	interface Props {
+		children: Snippet;
 	}
 
 	const { children }: Props = $props();
@@ -20,8 +20,8 @@
 		margin: 0 auto;
 	}
 
-    :global(pre) {
-        background-color: transparent !important;
-        width: 100%;
-    }
+	:global(pre) {
+		background-color: transparent !important;
+		width: 100%;
+	}
 </style>

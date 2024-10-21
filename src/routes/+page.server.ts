@@ -2,23 +2,23 @@ import { codeToHtml } from 'shiki';
 import dedent from 'dedent';
 
 async function highlight(code: string) {
-    return await codeToHtml(code, {
-        lang: 'svelte',
-        theme: 'nord',
-    });
+	return await codeToHtml(code, {
+		lang: 'svelte',
+		theme: 'nord',
+	});
 }
 
 export async function load() {
-    return {
-        examples: {
-            gettingStarted: await highlight(dedent`
+	return {
+		examples: {
+			gettingStarted: await highlight(dedent`
                 <script>
                     import { Hamburger } from 'svelte-hamburgers';
                 </script>
 
                 <Hamburger />
             `),
-            openProp: await highlight(dedent`
+			openProp: await highlight(dedent`
                 <script>
                     import { Hamburger } from 'svelte-hamburgers';
 
@@ -29,28 +29,28 @@ export async function load() {
 
                 <p>Hamburger open: {open}</p>
             `),
-            type: await highlight(dedent`
+			type: await highlight(dedent`
                 <script>
                     import { Hamburger } from 'svelte-hamburgers';
                 </script>
 
                 <Hamburger type="elastic" />
             `),
-            title: await highlight(dedent`
+			title: await highlight(dedent`
                 <script>
                     import { Hamburger } from 'svelte-hamburgers';
                 </script>
 
                 <Hamburger title="Toggles the cat picture" />
             `),
-            style: await highlight(dedent`
+			style: await highlight(dedent`
                 <script>
                     import { Hamburger } from 'svelte-hamburgers';
                 </script>
 
                 <Hamburger --color="red" />
             `),
-            fullExample: await highlight(dedent`
+			fullExample: await highlight(dedent`
                 <script>
                     import Hamburger from '$lib/Hamburger.svelte';
                     import { fly } from 'svelte/transition';
@@ -75,6 +75,6 @@ export async function load() {
                     {/if}
                 </nav>
             `),
-        },
-    };
+		},
+	};
 }

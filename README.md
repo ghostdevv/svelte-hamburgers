@@ -16,7 +16,7 @@ If you want to use the Svelte 3/4 version of this library, please checkout [svel
 
 ```svelte
 <script lang="ts">
-    import { Hamburger } from 'svelte-hamburgers';
+	import { Hamburger } from 'svelte-hamburgers';
 </script>
 
 <Hamburger />

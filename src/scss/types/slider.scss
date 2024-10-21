@@ -2,45 +2,45 @@
    * Slider
    */
 .hamburger--slider {
-    .hamburger-inner {
-        top: calc(var(--layer-height, 4px) / 2);
+	.hamburger-inner {
+		top: calc(var(--layer-height, 4px) / 2);
 
-        &::before {
-            top: calc(var(--layer-height, 4px) + var(--layer-spacing, 6px));
-            transition-property: transform, opacity;
-            transition-timing-function: ease;
-            transition-duration: 0.15s;
-        }
+		&::before {
+			top: calc(var(--layer-height, 4px) + var(--layer-spacing, 6px));
+			transition-property: transform, opacity;
+			transition-timing-function: ease;
+			transition-duration: 0.15s;
+		}
 
-        &::after {
-            top: calc(
-                (var(--layer-height, 4px) * 2) + (var(--layer-spacing, 6px) * 2)
-            );
-        }
-    }
+		&::after {
+			top: calc(
+				(var(--layer-height, 4px) * 2) + (var(--layer-spacing, 6px) * 2)
+			);
+		}
+	}
 
-    &.is-active {
-        .hamburger-inner {
-            --y-offset: calc(
-                var(--layer-spacing, 6px) + var(--layer-height, 4px)
-            );
+	&.is-active {
+		.hamburger-inner {
+			--y-offset: calc(
+				var(--layer-spacing, 6px) + var(--layer-height, 4px)
+			);
 
-            transform: translate3d(0, var(--y-offset), 0) rotate(45deg);
+			transform: translate3d(0, var(--y-offset), 0) rotate(45deg);
 
-            &::before {
-                transform: rotate(-45deg)
-                    translate3d(
-                        clac(var(--layer-width, 30px) / -7),
-                        calc(var(--layer-spacing, 6px) * -1),
-                        0
-                    );
-                opacity: 0;
-            }
+			&::before {
+				transform: rotate(-45deg)
+					translate3d(
+						clac(var(--layer-width, 30px) / -7),
+						calc(var(--layer-spacing, 6px) * -1),
+						0
+					);
+				opacity: 0;
+			}
 
-            &::after {
-                transform: translate3d(0, calc(var(--y-offset) * -2), 0)
-                    rotate(-90deg);
-            }
-        }
-    }
+			&::after {
+				transform: translate3d(0, calc(var(--y-offset) * -2), 0)
+					rotate(-90deg);
+			}
+		}
+	}
 }

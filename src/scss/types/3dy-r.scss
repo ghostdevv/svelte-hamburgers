@@ -2,49 +2,50 @@
    * 3DY Reverse
    */
 .hamburger--3dy-r {
-    .hamburger-box {
-        perspective: calc(var(--layer-width, 30px) * 2);
-    }
+	.hamburger-box {
+		perspective: calc(var(--layer-width, 30px) * 2);
+	}
 
-    .hamburger-inner {
-        transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
-            background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+	.hamburger-inner {
+		transition:
+			transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+			background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
 
-        &::before,
-        &::after {
-            transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
-        }
-    }
+		&::before,
+		&::after {
+			transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+		}
+	}
 
-    &.is-active {
-        .hamburger-inner {
-            background-color: transparent !important;
-            transform: rotateX(180deg);
+	&.is-active {
+		.hamburger-inner {
+			background-color: transparent !important;
+			transform: rotateX(180deg);
 
-            &::before {
-                transform: translate3d(
-                        0,
-                        calc(
-                            var(--layer-height, 4px) + var(--layer-spacing, 6px)
-                        ),
-                        0
-                    )
-                    rotate(45deg);
-            }
+			&::before {
+				transform: translate3d(
+						0,
+						calc(
+							var(--layer-height, 4px) + var(--layer-spacing, 6px)
+						),
+						0
+					)
+					rotate(45deg);
+			}
 
-            &::after {
-                transform: translate3d(
-                        0,
-                        calc(
-                            (
-                                    var(--layer-height, 4px) +
-                                        var(--layer-spacing, 6px)
-                                ) * -1
-                        ),
-                        0
-                    )
-                    rotate(-45deg);
-            }
-        }
-    }
+			&::after {
+				transform: translate3d(
+						0,
+						calc(
+							(
+									var(--layer-height, 4px) +
+										var(--layer-spacing, 6px)
+								) * -1
+						),
+						0
+					)
+					rotate(-45deg);
+			}
+		}
+	}
 }
