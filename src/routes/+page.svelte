@@ -87,8 +87,7 @@
 					<td>
 						The type of burger you want, you can see the types
 						<a
-							href="https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md"
-						>
+							href="https://github.com/ghostdevv/svelte-hamburgers/blob/main/types.md">
 							here
 						</a>, it should be lowercase.
 					</td>
