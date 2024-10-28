@@ -28,7 +28,7 @@
 		"@sveltejs/package": "^2.3.5",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"dedent": "^1.5.3",
-		"ghostsui": "2.0.0-beta.1",
+		"ghostsui": "2.0.0-beta.2",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.7",
 		"publint": "^0.2.11",
